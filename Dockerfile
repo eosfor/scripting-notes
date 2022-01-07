@@ -102,7 +102,6 @@ ENV DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=false
 WORKDIR ${HOME}/notebooks/
 
 # Copy notebooks
-
 COPY ./NOTEBOOKS/ ${HOME}/notebooks/
 
 RUN chown -R ${NB_UID} ${HOME}
