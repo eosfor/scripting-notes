@@ -98,11 +98,11 @@ RUN dotnet interactive jupyter install
 # Enable telemetry once we install jupyter for the image
 ENV DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=false
 
-# Set root to notebooks
-WORKDIR ${HOME}/notebooks/
-
 # Copy notebooks
 COPY ./notebooks/ ${HOME}/notebooks/
 
 RUN chown -R ${NB_UID} ${HOME}
 USER ${USER}
+
+# Set root to notebooks
+WORKDIR ${HOME}/notebooks/
