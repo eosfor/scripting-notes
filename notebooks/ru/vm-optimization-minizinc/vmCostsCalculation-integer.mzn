@@ -34,10 +34,6 @@ constraint forall(vm in existingVMs)(
 var int: totalPrice = sum(vm in existingVMs)(vmSizePrice[selectedSize[vm]]);
 var int: totalACU = sum(vm in existingVMs)( vmSizeACU[selectedSize[vm]] );
 
-% constraint totalACU >= 18860;
-
-% solve  minimize totalPrice;
-
 %placeholder%
 
 output [ "{\n" ++ 
