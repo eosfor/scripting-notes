@@ -1,4 +1,9 @@
-FROM jupyter/base-notebook:latest
+FROM minizinc/minizinc as composer
+
+FROM jupyter/base-notebook:latest as builder
+
+COPY --from=composer /usr/local/bin/* /usr/local/bin/
+COPY --from=composer /usr/local/share/minizinc /usr/local/share/minizinc
 
 # Install .NET CLI dependencies
 
@@ -104,5 +109,6 @@ WORKDIR ${HOME}/notebooks/
 # Copy notebooks
 COPY ./notebooks/ ${HOME}/notebooks/
 
-# RUN chown -R ${NB_UID} ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
 USER ${USER}
