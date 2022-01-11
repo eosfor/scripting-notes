@@ -1,4 +1,11 @@
-$rootFolderPath = ".\vm-optimization-minizinc"
+if ([System.Environment]::OSVersion.Platform -eq "Win32NT") {
+    $rootFolderPath = ".\vm-optimization-minizinc"
+}
+else {
+    $rootFolderPath = "./vm-optimization-minizinc"
+}
+
+
 
 function New-TempModelFile {
     [CmdletBinding()]
@@ -8,7 +15,7 @@ function New-TempModelFile {
     process {
         $tmpFile = New-TemporaryFile
         $newName = "$($tmpFile.BaseName).mzn"
-        $newPath = "$($tmpFile.DirectoryName)\$newName"
+        $newPath = Join-Path -Path $tmpFile.DirectoryName -ChildPath $newName
         Rename-Item -Path $tmpFile.FullName -NewName $newName
 
         Get-Content -Path $SourceModelPath -ReadCount 0 | Out-File $newPath -Force
@@ -29,9 +36,16 @@ function Invoke-Minizinc {
     process {
         if (-not (Test-Path $Modelpath) ) {Write-Error "$Modelpath does not exist"}
         
-        Write-Verbose "Invoking: minizinc.exe --solver $Solver  $Modelpath $DataPath --time-limit (10 * 60 * 1000)"
+        Write-Verbose "Invoking: minizinc --solver $Solver  $Modelpath $DataPath --time-limit (10 * 60 * 1000)"
         
-        $k = minizinc.exe --solver $Solver  $Modelpath $DataPath --time-limit (10 * 60 * 1000)
+        if ([System.Environment]::OSVersion.Platform -eq "Win32NT") {
+            $k = minizinc.exe --solver $Solver  $Modelpath $DataPath --time-limit (10 * 60 * 1000)
+        }
+        else {
+            $k = minizinc --solver $Solver  $Modelpath $DataPath --time-limit (10 * 60 * 1000)
+        }
+
+        
         $x = ((($k) -replace "==========","") -join "`n" -split "----------") | ConvertFrom-Json -Depth 10
 
         Write-Verbose "modelling res is: $x"
