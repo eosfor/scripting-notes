@@ -18,5 +18,6 @@ After everything is installed you just need to
 ## Notebooks
 
 - [How to optimize target VM costs when moving them to Azure](./vmOptimization-basics.ipynb)
+- [How to visualize your VNET topology in Azure with PowerShell](./vnet-topology-visualization.ipynb)
 
 Enjoy!
