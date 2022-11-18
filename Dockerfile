@@ -1,6 +1,6 @@
 FROM minizinc/minizinc as composer
 
-FROM jupyter/base-notebook:latest as builder
+FROM jupyter/base-notebook:ubuntu-20.04 as builder
 
 COPY --from=composer /usr/local/bin/* /usr/local/bin/
 COPY --from=composer /usr/local/share/minizinc /usr/local/share/minizinc
@@ -44,11 +44,11 @@ RUN apt-get update \
 # Install .NET Core SDK
 
 # When updating the SDK version, the sha512 value a few lines down must also be updated.
-ENV DOTNET_SDK_VERSION 6.0.100
+ENV DOTNET_SDK_VERSION 7.0.100
 
-RUN dotnet_sdk_version=6.0.100 \
+RUN dotnet_sdk_version=7.0.100 \
   && curl -SL --output dotnet.tar.gz https://dotnetcli.azureedge.net/dotnet/Sdk/$dotnet_sdk_version/dotnet-sdk-$dotnet_sdk_version-linux-x64.tar.gz \
-  && dotnet_sha512='cb0d174a79d6294c302261b645dba6a479da8f7cf6c1fe15ae6998bc09c5e0baec810822f9e0104e84b0efd51fdc0333306cb2a0a6fcdbaf515a8ad8cf1af25b' \
+  && dotnet_sha512='0a2e74486357a3ee16abb551ecd828836f90d8744d6e2b6b83556395c872090d9e5166f92a8d050331333d07d112c4b27e87100ba1af86cac8a37f1aee953078' \
   && echo "$dotnet_sha512 dotnet.tar.gz" | sha512sum -c - \
   && mkdir -p /usr/share/dotnet \
   && tar -ozxf dotnet.tar.gz -C /usr/share/dotnet \
