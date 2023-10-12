@@ -43,7 +43,6 @@ RUN apt-get update \
 
 # Install .NET Core SDK
 
-# https://download.visualstudio.microsoft.com/download/pr/9144f37e-b370-41ee-a86f-2d2a69251652/bc1d544112ec134184a5aec7f7a1eaf9/dotnet-sdk-8.0.100-rc.2.23502.2-linux-x64.tar.gz
 # When updating the SDK version, the sha512 value a few lines down must also be updated.
 ENV DOTNET_SDK_VERSION 8.0.100-rc.2.23502.2
 
@@ -58,7 +57,7 @@ ENV DOTNET_SDK_VERSION 8.0.100-rc.2.23502.2
 #  # Trigger first run experience by running arbitrary cmd
 #  && dotnet help
 
-RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --runtime dotnet --channel 8.0 --install-dir /usr/share/dotnet \
+RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel 8.0 --install-dir /usr/share/dotnet \
   && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet \
   && dotnet help
 
