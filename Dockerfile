@@ -47,16 +47,18 @@ RUN apt-get update \
 # When updating the SDK version, the sha512 value a few lines down must also be updated.
 ENV DOTNET_SDK_VERSION 8.0.100-rc.2.23502.2
 
-RUN dotnet_sdk_version=8.0.100-rc.2.23502.2 \
-  && curl -SL --output dotnet.tar.gz https://dotnetcli.azureedge.net/dotnet/Sdk/$dotnet_sdk_version/dotnet-sdk-$dotnet_sdk_version-linux-x64.tar.gz \
-  && dotnet_sha512='45f09e7b031f4cf5b4dcead240fe47e2e3731d97d22aa96d3a02a087322658606cc22792053c3784c44f15d7c9bad0ac9dbda90def7b4e197f2955dca9a5bb6c' \
-  && echo "$dotnet_sha512 dotnet.tar.gz" | sha512sum -c - \
-  && mkdir -p /usr/share/dotnet \
-  && tar -ozxf dotnet.tar.gz -C /usr/share/dotnet \
-  && rm dotnet.tar.gz \
-  && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet \
-  # Trigger first run experience by running arbitrary cmd
-  && dotnet help
+# RUN dotnet_sdk_version=8.0.100-rc.2.23502.2 \
+#  && curl -SL --output dotnet.tar.gz https://dotnetcli.azureedge.net/dotnet/Sdk/$dotnet_sdk_version/dotnet-sdk-$dotnet_sdk_version-linux-x64.tar.gz \
+#  && dotnet_sha512='45f09e7b031f4cf5b4dcead240fe47e2e3731d97d22aa96d3a02a087322658606cc22792053c3784c44f15d7c9bad0ac9dbda90def7b4e197f2955dca9a5bb6c' \
+#  && echo "$dotnet_sha512 dotnet.tar.gz" | sha512sum -c - \
+#  && mkdir -p /usr/share/dotnet \
+#  && tar -ozxf dotnet.tar.gz -C /usr/share/dotnet \
+#  && rm dotnet.tar.gz \
+#  && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet \
+#  # Trigger first run experience by running arbitrary cmd
+#  && dotnet help
+
+ENV curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --runtime dotnet --channel LTS --version latest
 
 # Copy notebooks
 
