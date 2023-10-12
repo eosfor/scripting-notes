@@ -58,7 +58,7 @@ ENV DOTNET_SDK_VERSION 8.0.100-rc.2.23502.2
 #  # Trigger first run experience by running arbitrary cmd
 #  && dotnet help
 
-RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --runtime dotnet --channel LTS --version 8.0.100-rc.2.23502.2
+RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --runtime dotnet --channel 8.0
 
 # Copy notebooks
 
