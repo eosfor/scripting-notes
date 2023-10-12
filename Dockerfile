@@ -43,18 +43,8 @@ RUN apt-get update \
 
 # Install .NET Core SDK
 
-# When updating the SDK version, the sha512 value a few lines down must also be updated.
-ENV DOTNET_SDK_VERSION 7.0.100
-
-RUN dotnet_sdk_version=7.0.100 \
-  && curl -SL --output dotnet.tar.gz https://dotnetcli.azureedge.net/dotnet/Sdk/$dotnet_sdk_version/dotnet-sdk-$dotnet_sdk_version-linux-x64.tar.gz \
-  && dotnet_sha512='0a2e74486357a3ee16abb551ecd828836f90d8744d6e2b6b83556395c872090d9e5166f92a8d050331333d07d112c4b27e87100ba1af86cac8a37f1aee953078' \
-  && echo "$dotnet_sha512 dotnet.tar.gz" | sha512sum -c - \
-  && mkdir -p /usr/share/dotnet \
-  && tar -ozxf dotnet.tar.gz -C /usr/share/dotnet \
-  && rm dotnet.tar.gz \
+RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel 7.0 --install-dir /usr/share/dotnet \
   && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet \
-  # Trigger first run experience by running arbitrary cmd
   && dotnet help
 
 # Copy notebooks

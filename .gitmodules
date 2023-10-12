@@ -1,0 +1,3 @@
+[submodule "notebooks/en/no-caf-webapps/external/ResourceModules"]
+	path = notebooks/en/no-caf-webapps/external/ResourceModules
+	url = https://github.com/Azure/ResourceModules.git
