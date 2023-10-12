@@ -262,5 +262,81 @@ function Connect-Environment {
 }
 
 
-Connect-Environment -SourceEnvResourceGroup 'SHARED-DATA' -TargetEnvResourceGroup 'DEV'
-Connect-Environment -SourceEnvResourceGroup 'SHARED-CONFIGURATION' -TargetEnvResourceGroup 'DEV'
+function Get-AppServicePlanDetail {
+    [CmdletBinding()]
+    param (
+        $ResourceGroupName,
+        [switch]$AsHTML
+    )
+
+    process {
+        $webApp = Get-AzWebApp -ResourceGroupName $ResourceGroupName
+        $webAppMapping = $webApp | select-object @{l = "AppServicePlan"; e = { $_.ServerFarmId -split '/' | Select-Object -Last 1 } },
+        Name,
+        @{l = "VNETName"; e = { $_.VirtualNetworkSubnetId -split '/' | Select-Object -Index 8 } },
+        @{l = "SubnetName"; e = { $_.VirtualNetworkSubnetId -split '/' | Select-Object -Index 10 } }, 
+        @{l = "SubnetId"; e = { $_.VirtualNetworkSubnetId } } | Sort-Object AppServicePlan
+        if ($AsHTML.IsPresent) {
+            $webAppMappingHtml = $webAppMapping | ConvertTo-Html -Fragment
+            $webAppMappingHtml
+        }
+        else {
+            $webAppMapping
+        }
+
+    }
+
+}
+
+function New-WebApp {
+    [CmdletBinding(DefaultParameterSetName = 'autovnet')]
+    param (
+        [Parameter(Mandatory = $true, ParameterSetName = 'autovnet')]
+        [Parameter(Mandatory = $true, ParameterSetName = 'explicitvnet')]
+        $ResourceGroupName,
+        [Parameter(Mandatory = $true, ParameterSetName = 'autovnet')]
+        [Parameter(Mandatory = $true, ParameterSetName = 'explicitvnet')]
+        $TargetAppSvcPlan,
+        [Parameter(Mandatory = $true, ParameterSetName = 'autovnet')]
+        [Parameter(Mandatory = $true, ParameterSetName = 'explicitvnet')]
+        $WebAppName,
+        [Parameter(Mandatory = $true, ParameterSetName = 'explicitvnet')]
+        $TargetVnetName,
+        [Parameter(Mandatory = $true, ParameterSetName = 'explicitvnet')]
+        $TargetSubnetName
+    )
+
+    process {
+        $resourceGroup = Get-AzResourceGroup -Name $ResourceGroupName
+        $webAppMapping = Get-AppServicePlanDetail -ResourceGroupName $ResourceGroupName
+        $matchingPlans = $webAppMapping | Where-Object AppServicePlan -eq $TargetAppSvcPlan
+        if ($null -ne $matchingPlans -and $matchingPlans.Count -gt 0) {
+            switch ($PSCmdlet.ParameterSetName) {
+                'autovnet' { 
+                    $subnetResourceId = @($webAppMapping | Where-Object AppServicePlan -eq $TargetAppSvcPlan)[0].SubnetId
+                }
+                'explicitvnet' { 
+                    $vnetObj = Get-AzVirtualNetwork -ResourceGroupName $ResourceGroupName -Name $TargetVnetName
+                    $subnetResourceId = @($vnetObj.Subnets | Where-Object Name -eq $TargetSubnetName)[0].SubnetId
+                }
+            }
+            
+            $appSvcPlan = Get-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $TargetAppSvcPlan
+            $webApp = Get-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName -ErrorAction SilentlyContinue
+            if (-not $webApp) {
+                $webApp = New-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName -Location $resourceGroup.Location -AppServicePlan $appSvcPlan.Name
+            }
+    
+            $webAppResource = Get-AzResource -ResourceType 'Microsoft.Web/sites' -ResourceGroupName $ResourceGroupName -ResourceName $webApp.Name
+            $webAppResource.Properties.publicNetworkAccess = 'Disabled'
+            $webAppResource.Properties.virtualNetworkSubnetId = $subnetResourceId
+            $webAppResource.Properties.vnetRouteAllEnabled = 'false'
+            $webAppResource | Set-AzResource -Force
+        }
+        else {
+            # Handle the error, e.g., write an error message or throw an exception
+            Write-Error "No matching App Service Plan found."
+        }
+    }
+
+}
