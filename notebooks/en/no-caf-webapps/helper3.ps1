@@ -179,7 +179,7 @@ function New-PrivateEndpoint {
     process {
         $subnets = Get-SubnetList -ResourceGroupName $ResourceGroupName | Where-Object { $_.name -eq 'private-endpoint-subnet' }
         $groupId = Get-GroupId -ResourceId $Resource.Id
-        $endpoints = Get-AzPrivateEndpoint -ResourceGroupName $ResourceGroupName
+        $endpoints = @(Get-AzPrivateEndpoint -ResourceGroupName $ResourceGroupName)
 
         foreach ($subnet in $subnets) {
             $privateEndpoint = Test-PrivateEndpoint -Resource $Resource -Subnet $subnet -ResourceGroupName $ResourceGroupName -Endpoints $endpoints
@@ -283,9 +283,7 @@ function Get-AppServicePlanDetail {
         else {
             $webAppMapping
         }
-
     }
-
 }
 
 function New-WebApp {
@@ -309,34 +307,34 @@ function New-WebApp {
     process {
         $resourceGroup = Get-AzResourceGroup -Name $ResourceGroupName
         $webAppMapping = Get-AppServicePlanDetail -ResourceGroupName $ResourceGroupName
-        $matchingPlans = $webAppMapping | Where-Object AppServicePlan -eq $TargetAppSvcPlan
-        if ($null -ne $matchingPlans -and $matchingPlans.Count -gt 0) {
-            switch ($PSCmdlet.ParameterSetName) {
-                'autovnet' { 
-                    $subnetResourceId = @($webAppMapping | Where-Object AppServicePlan -eq $TargetAppSvcPlan)[0].SubnetId
-                }
-                'explicitvnet' { 
-                    $vnetObj = Get-AzVirtualNetwork -ResourceGroupName $ResourceGroupName -Name $TargetVnetName
-                    $subnetResourceId = @($vnetObj.Subnets | Where-Object Name -eq $TargetSubnetName)[0].SubnetId
-                }
+        $matchingPlans = @($webAppMapping | Where-Object AppServicePlan -eq $TargetAppSvcPlan)
+        if ($matchingPlans.Count -eq 0) {
+            if ($PSCmdlet.ParameterSetName -ne 'explicitvnet'){
+                Write-Error 'No Web apps are on the $TargetAppSvcPlan. Vnet and Subnet must be provided explicitly'
             }
+        }
+        switch ($PSCmdlet.ParameterSetName) {
+            'autovnet' { 
+                $subnetResourceId = @($webAppMapping | Where-Object AppServicePlan -eq $TargetAppSvcPlan)[0].SubnetId
+            }
+            'explicitvnet' { 
+                $vnetObj = Get-AzVirtualNetwork -ResourceGroupName $ResourceGroupName -Name $TargetVnetName
+                $subnetResourceId = @($vnetObj.Subnets | Where-Object Name -eq $TargetSubnetName)[0].SubnetId
+            }
+        }
             
-            $appSvcPlan = Get-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $TargetAppSvcPlan
-            $webApp = Get-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName -ErrorAction SilentlyContinue
-            if (-not $webApp) {
-                $webApp = New-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName -Location $resourceGroup.Location -AppServicePlan $appSvcPlan.Name
-            }
+        $appSvcPlan = Get-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $TargetAppSvcPlan
+        $webApp = Get-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName -ErrorAction SilentlyContinue
+        if (-not $webApp) {
+            $webApp = New-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName -Location $resourceGroup.Location -AppServicePlan $appSvcPlan.Name
+            $webApp = Set-AzWebApp -AssignIdentity $true -Name $WebAppName -ResourceGroupName $ResourceGroupName 
+        }
     
-            $webAppResource = Get-AzResource -ResourceType 'Microsoft.Web/sites' -ResourceGroupName $ResourceGroupName -ResourceName $webApp.Name
-            $webAppResource.Properties.publicNetworkAccess = 'Disabled'
-            $webAppResource.Properties.virtualNetworkSubnetId = $subnetResourceId
-            $webAppResource.Properties.vnetRouteAllEnabled = 'false'
-            $webAppResource | Set-AzResource -Force
-        }
-        else {
-            # Handle the error, e.g., write an error message or throw an exception
-            Write-Error "No matching App Service Plan found."
-        }
+        $webAppResource = Get-AzResource -ResourceType 'Microsoft.Web/sites' -ResourceGroupName $ResourceGroupName -ResourceName $webApp.Name
+        $webAppResource.Properties.publicNetworkAccess = 'Disabled'
+        $webAppResource.Properties.virtualNetworkSubnetId = $subnetResourceId
+        $webAppResource.Properties.vnetRouteAllEnabled = 'false'
+        $webAppResource | Set-AzResource -Force
     }
 
 }
