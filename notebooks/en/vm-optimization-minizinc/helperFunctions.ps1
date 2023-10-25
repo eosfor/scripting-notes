@@ -31,8 +31,7 @@ function Invoke-Minizinc {
         $Modelpath,
         $DataPath,
         $TimeLimit = (10 * 60 * 1000)
-    )
-       
+    )   
     process {
         if (-not (Test-Path $Modelpath) ) {Write-Error "$Modelpath does not exist"}
         
@@ -50,7 +49,7 @@ function Invoke-Minizinc {
 
         Write-Verbose "modelling res is: $x"
 
-        $x | ? {$_ -ne $null}
+        $x | Where-Object {$_ -ne $null}
     }
 }
 
@@ -70,7 +69,6 @@ function Start-MinizincVMOptimizationModel {
         [Parameter(ParameterSetName = "Costs", ValueFromPipeline = $true)]
         $InputObject = $null
     )
-      
     process {
         $tFile = New-TempModelFile
 
@@ -78,10 +76,10 @@ function Start-MinizincVMOptimizationModel {
 
         if($Costs.IsPresent) {
             if ($null -eq $InputObject) {
-                (gc $tFile) -replace "%placeholder%", "solve  minimize totalPrice;" | out-file -FilePath $tFile -Force
+                (Get-Content $tFile) -replace "%placeholder%", "solve  minimize totalPrice;" | out-file -FilePath $tFile -Force
             }
             else {
-                (gc $tFile) -replace "%placeholder%", "constraint totalACU >= $($InputObject.totalACU); solve  minimize totalPrice;" | out-file -FilePath $tFile -Force
+                (Get-Content $tFile) -replace "%placeholder%", "constraint totalACU >= $($InputObject.totalACU); solve  minimize totalPrice;" | out-file -FilePath $tFile -Force
             }
 
             $ret = Invoke-Minizinc -Modelpath $tFile -DataPath (Resolve-Path $DataPath).Path
@@ -91,10 +89,10 @@ function Start-MinizincVMOptimizationModel {
 
         if ($Performance.IsPresent){
             if ($null -eq $InputObject){
-                (gc $tFile) -replace "%placeholder%", "solve  maximize totalACU;" | out-file -FilePath $tFile -Force
+                (Get-Content $tFile) -replace "%placeholder%", "solve  maximize totalACU;" | out-file -FilePath $tFile -Force
             }
             else {
-                (gc $tFile) -replace "%placeholder%", "constraint totalPrice <= $($InputObject.totalPrice * 10000); solve  maximize totalACU;" | out-file -FilePath $tFile -Force
+                (Get-Content $tFile) -replace "%placeholder%", "constraint totalPrice <= $($InputObject.totalPrice * 10000); solve  maximize totalACU;" | out-file -FilePath $tFile -Force
             }
             
             $ret = Invoke-Minizinc -Modelpath $tFile -DataPath (Resolve-Path $DataPath).Path
