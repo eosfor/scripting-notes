@@ -22,19 +22,24 @@ array[existingVMs] of var vmDisks: selectedDiskSize;
 
 
 constraint forall(vm in existingVMs)(
-    vmSizeRAM[selectedSize[vm]] >= vmRAM[vm]
+    vmSizeRAM[selectedSize[vm]] >= vmRAM[vm] /\
+    vmSizeRAM[selectedSize[vm]] < vmRAM[vm] * 4
 );
 
 
 constraint forall(vm in existingVMs)(
-   vmSizeCPU[selectedSize[vm]] >=  vmCPU[vm] * 0.8
+    vmSizeCPU[selectedSize[vm]] >=  vmCPU[vm] /\
+    vmSizeCPU[selectedSize[vm]] <=  vmCPU[vm] * 4
 );
 
 
 var int: totalPrice = sum(vm in existingVMs)(vmSizePrice[selectedSize[vm]]);
 var int: totalACU = sum(vm in existingVMs)( vmSizeACU[selectedSize[vm]] );
 
-%placeholder%
+%constraint totalPrice <= 7478400;
+% constraint totalACU >= 18920;
+% solve  maximize totalACU;
+solve  minimize totalPrice;
 
 output [ "{\n" ++ 
             "\"totalPrice\" :  \(totalPrice / 10000),\n" ++ 
@@ -52,7 +57,7 @@ output [ "{\n" ++
                                 "\"targetVMDisk\": \(vmDiskSizes[selectedDiskSize[vm]]),\n" ++
                                 "\"targetVMPrice\": \(vmSizePrice[selectedSize[vm]] / 10000),\n" ++
                                 "\"targetVMACU\": \(vmSizeACU[selectedSize[vm]])\n" ++
-                           " }" | vm in  existingVMs ]) ++
+                        "   }" | vm in  existingVMs ]) ++
             "]" ++
             "}"
         ]
