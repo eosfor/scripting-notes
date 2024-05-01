@@ -1,0 +1,678 @@
+[
+  {
+    "target": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+    "source": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff01-subnet",
+    "source": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff02-subnet",
+    "source": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff03-subnet",
+    "source": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3/subnets/AzureSrvXyzSubnet",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3/subnets/AzureSrvAbcSubnet",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3/subnets/GatewaySubnet",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3/subnets/InDnsPRSNet",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3/subnets/outDnsPRSNet",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3/subnets/AzureSrvAbcManagementSubnet",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-shs-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-shs-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3",
+    "source": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/tools",
+    "source": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/dayNightHardWorkers",
+    "source": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/whatsapp-gateway",
+    "source": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-shs-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-shs-vnet-asddsa3/subnets/somePointsOrNot",
+    "source": "resourceGroups/rg-cccl-shs-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-shs-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-cccl-shs-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-shs-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-our-super-stuff",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-our-super-stuff",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/frontend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-our-super-stuff",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/frontend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-our-super-stuff",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/frontend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-our-superduper-stuff",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-hub-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-hub-asddsa3",
+    "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
+  },
+  {
+    "target": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+    "source": "lnx-vm-for-img608"
+  },
+  {
+    "target": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+    "source": "win-vm-for-img766"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff01-subnet",
+    "source": "pe-redis-cccl-data-zzz-asddsa3-redisCache-0.nic.ce8090e2-f156-4056-8823-7004a586f482"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff01-subnet",
+    "source": "pe-redis-cccl-data-zzzint-asddsa3-redisCach.nic.fac33eee-4f13-4ce0-b308-d45beda6ee92"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff01-subnet",
+    "source": "pe-redis-cccl-data-zzzperf-asddsa3-redisCac.nic.f334d909-9b6e-42da-a444-edecf834e0b1"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff01-subnet",
+    "source": "pe-redis-cccl-data-zzzstg-asddsa3-redisCach.nic.283d2e2b-e49f-453b-b350-6945c4306d8c"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/tools",
+    "source": "zzz-testauto01-nic-01"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/tools",
+    "source": "zzz-testauto02-nic-01"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/whatsapp-gateway",
+    "source": "vm-ops-whatsappgate01425"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/whatsapp-gateway",
+    "source": "vm-ops-whatsappgate02631"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/tools",
+    "source": "vm-ops-lnx01-nic-01"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/tools",
+    "source": "vm-ops-win01-nic-01"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-ops-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-ops-vnet-asddsa3/subnets/tools",
+    "source": "vm-ops-win02-nic-01"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-shs-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-shs-vnet-asddsa3/subnets/somePointsOrNot",
+    "source": "pe-cccl-shs-whatsthis01-asddsa3-config.nic.7bbd8f03-d693-47a3-97d3-eb4d92c83962"
+  },
+  {
+    "target": "resourceGroups/rg-cccl-shs-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-shs-vnet-asddsa3/subnets/somePointsOrNot",
+    "source": "pe-cccl-shs-kv-asddsa3-vault-0.nic.70871463-0b01-4dbd-ac52-bcab2e0f1d00"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-some01-svc-asddsa3-sites-0.nic.7a4fae80-37d3-4d2d-92c5-04f92ec3d801"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-some02-svc-asddsa3-sites-0.nic.4cee32ae-dcfd-4f30-a3df-7f53038d71d1"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-cani-help-svc-asddsa3-sites-.nic.108058de-eb26-47bb-a06f-5ee4513ef3a0"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-dev-zzz-availability-tests-asddsa3-funct.nic.2fae13a6-2828-4f4e-bc4d-424f85f90a1f"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-gimmemore-svc-asddsa3-sites-0.nic.35597357-8384-40f6-810a-7c2986476104"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-dev-zzz-count-onme-33-asddsa3-sites-0.nic.e6afed2f-4695-47a1-8ce3-ac9d9a66ead9"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-imthe-one-web-asddsa3-sites-0.nic.fa1ccfb9-4522-4f03-ab2a-7b89453d327c"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-iknowitall-svc-asddsa3-sites-.nic.5e604e2b-b00a-4218-b227-d453b426a0e4"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-dataretention-svc-asddsa3-sites-.nic.7ebd36fc-4932-4da5-bbef-f5b87ffd07cd"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-super-star-asddsa3-sites-0.nic.ee100722-4905-43bf-9962-f805c711a616"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-dev-zzz-toofast-asddsa3-sites-0.nic.dbc13193-d7c7-40c0-8ff3-9eed3dcc7b0b"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-ohmy-document-svc-asddsa3-sites-0.nic.4b013a52-bc39-4018-9a1c-024429bb0868"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-intl-utils-svc-asddsa3-sites-0.nic.46bff85d-e192-4543-ae80-a520e5d91363"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-nice-pics-asddsa3-sites-0.nic.8f600f18-e3d5-4fcf-a8a5-7aacd85ba1ad"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-perf-aggregation-worker-asddsa3-.nic.ff1dc089-9907-415b-9899-8ee11566224d"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-findme-ifu-can-asddsa3-sit.nic.77965f23-159e-4c79-ad80-fad1d166437c"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-policy-svc-asddsa3-sites-0.nic.0912abbd-710f-4afe-9975-b6ecbaad2a26"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-populate-svc-asddsa3-sites-0.nic.9fbde112-0a87-40c6-b29e-af24f834208d"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-pingpong-svc-asddsa3-sites-0.nic.55ab784d-d6d6-4bcb-9d4b-f897f12e017f"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-dev-zzz-blahblah-svc-asddsa3-sites-0.nic.030044ef-9c28-4320-a427-ef3c74c8455c"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-nyt-notepad-asddsa3-sites-0.nic.707d89cf-9d1f-4bb0-84b8-15e9965b5867"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-lawns-svc-asddsa3-sites-0.nic.e82a6eeb-6d68-48f9-9c63-0cc19971fc90"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-scheduler-asddsa3-sites-0.nic.6b5aa20c-98cc-4041-ad35-129535427ef8"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-atlast-srv-asddsa3-sites-0.nic.7023d783-81a1-41d1-bb90-a66c78338bbe"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-dev-zzz-notsure-what-thisis-asddsa3.nic.974b5fbe-dea4-4572-97b6-f56a46896c7e"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-dev-zzz-another-one-asddsa3-sites-0.nic.8fbcfd1a-4bfa-48cc-b67a-83aba18fc631"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-jbgjhbdfjsbvhbvah-blob.nic.45db4620-4827-4558-bce1-4ed2dc8bf0dc"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-jbgjhbdfjsbvhbvah-web.nic.bb0faf14-f12d-4b0d-8fb0-e85b0e915737"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-nhijrnhiotbgfbvbscscd-file-0.nic.19dfa440-3408-4019-ab74-d380316d481a"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-some01-svc-asddsa3-sites-0.nic.1ff0a8e5-6897-4ff5-a5a8-67597b96a6bf"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-some02-svc-asddsa3-sites-0.nic.739b5284-e5e6-4a3f-809c-120496e17fbd"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-cani-help-svc-asddsa3-sites-.nic.cbcbc67a-ba78-4964-b252-e26e6a1c2dea"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-gimmemore-svc-asddsa3-sites-0.nic.fb83ad35-8708-4259-973a-6393e143474b"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-int-zzz-count-onme-33-asddsa3-sites-0.nic.e8b658f1-ef92-4da3-8512-cb9bcdd5f341"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-imthe-one-web-asddsa3-sites-0.nic.6d3380b6-2bbb-4ec6-91fb-6f3ce41cfaaf"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-iknowitall-svc-asddsa3-sites-.nic.e1ac2bc8-eb90-4ef4-b98e-f1973b762464"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-dataretention-svc-asddsa3-sites-.nic.ebb14655-d840-4478-81df-0d7ecebbe51e"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-super-star-asddsa3-sites-0.nic.dddcd185-2249-46e4-b981-e41fa2dd70a0"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-int-zzz-toofast-asddsa3-sites-0.nic.f3c88d72-2e42-4fa8-a0bf-b5a580f947be"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-ohmy-document-svc-asddsa3-sites-0.nic.b334fe80-d4e5-4ae6-bee5-f07e87a73693"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-intl-utils-svc-asddsa3-sites-0.nic.f6a4e657-399a-40ce-b077-f1d5fa0fdbec"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-nice-pics-asddsa3-sites-0.nic.2618ca5d-2670-4988-a915-caea41a45cf2"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-perf-aggregation-worker-asddsa3-.nic.79b62b87-a75d-4505-b8a2-c957cfcf9e24"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-findme-ifu-can-asddsa3-sit.nic.83e104f0-15ed-4bc8-a7fd-756254c5f309"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-policy-svc-asddsa3-sites-0.nic.1f76f62a-bf66-4f28-80d0-3fbd9be3c391"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-populate-svc-asddsa3-sites-0.nic.fddf50f6-94cf-48af-8630-de60927f20f5"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-pingpong-svc-asddsa3-sites-0.nic.2d550601-5862-4bfc-ac04-2bdd7a60938e"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-nyt-notepad-asddsa3-sites-0.nic.0e42ec7e-8013-4dbd-a4c3-c51ba1418767"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-lawns-svc-asddsa3-sites-0.nic.54013cb2-abbc-43b5-b1c1-b3069431e522"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-scheduler-asddsa3-sites-0.nic.8d308136-1556-44d4-8bfd-ee3712c3f949"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-atlast-srv-asddsa3-sites-0.nic.c6d1795c-86ad-4076-85ce-7c57a6f5051e"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-int-zzz-another-one-asddsa3-sites-0.nic.220c322f-2269-4531-8144-c6b821d5d428"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-intzzzmfeaj6tpe-blob.nic.4f255f1c-7f3f-4b90-b892-527f99d86da4"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-intzzzmfeaj6tpe-web.nic.d71fef6a-a067-4c22-9cd3-5ff9c9d8161a"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-sazzzint2ybtmiklt7yds-file-0.nic.2f2e6e9a-9558-4945-933b-57d431f60001"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-some01-svc-asddsa3-sites-0.nic.9610996d-4523-4036-ae66-27b1f3f3a0c0"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-some02-svc-asddsa3-sites-0.nic.f043deab-f197-45c6-9494-6fc2e132dc67"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-cani-help-svc-asddsa3-sites.nic.64c85dcf-985b-4518-a7a4-4057b8b18725"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-gimmemore-svc-asddsa3-sites-0.nic.c51c436c-0bf2-4884-ac4e-cd6261b7fa3c"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-count-onme-33-asddsa3-sites-0.nic.2a6d4dcf-27e0-4df9-a06c-19043e4be440"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-imthe-one-web-asddsa3-sites-.nic.c9ecdab1-29a1-4b95-8438-4c4175b4c9d6"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-iknowitall-svc-asddsa3-sites.nic.00616bdd-d54e-4280-bc17-b2ac9587060b"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-dataretention-svc-asddsa3-sites.nic.b6e78bdf-273f-4633-a41b-f006a8e333d9"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-super-star-asddsa3-sites-0.nic.f9bbd7bc-7afe-41e7-a545-35c664852c3f"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-perf-zzz-toofast-asddsa3-sites-0.nic.7ad40f57-52de-4eb1-9e7b-04d6ec7e5fa2"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-ohmy-document-svc-asddsa3-sites-0.nic.82be65b3-50c7-4e61-8197-2d717968226a"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-nice-pics-asddsa3-sites-0.nic.7e07036f-9b7e-4666-9ef0-84f6a76d6fc5"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-findme-ifu-can-asddsa3-si.nic.f7de4ee0-9bdd-4015-b348-f46e5e53311c"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-policy-svc-asddsa3-sites-0.nic.58d76dc1-e0a7-4bde-a80a-c89734cb863f"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-populate-svc-asddsa3-sites-0.nic.a5b698bd-4597-497c-bda5-e7cf771d0972"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-pingpong-svc-asddsa3-sites-0.nic.e69f03ba-4bc8-4261-882a-4b4602ffc111"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-lawns-svc-asddsa3-sites-0.nic.24831ccf-7f5f-4e39-bb89-32e5134edb37"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-scheduler-asddsa3-sites-0.nic.2bb6c963-e9b7-4121-afc0-ad033d788dfd"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-atlast-srv-asddsa3-sites-0.nic.4e4d8965-d40e-4c22-8c18-cb6ee6081989"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-perf-zzz-another-one-asddsa3-sites-0.nic.64f223c6-07ad-4187-8fbc-629855d76fcb"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-perfzzzmfeaj6tpe-blob.nic.1d5a48c2-15de-464f-9f8d-d5a5a2fb9ad0"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-perfzzzmfeaj6tpe-web.nic.7dc6fd8d-5696-4bde-8f84-93ac62d587ca"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-sazzzperflwnvkj6ahayqq-file-0.nic.899dc8cb-375d-4743-be8a-09c619a94bea"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-some01-svc-asddsa3-sites-0.nic.ed0dda2c-d934-4d56-a5a5-74fa27389cff"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-some02-svc-asddsa3-sites-0.nic.95ee352b-7fbb-49fb-88bd-2cbcbb883916"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-cani-help-svc-asddsa3-sites-.nic.6317badf-f1e4-4f0b-a015-2d8b39dd2a90"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-gimmemore-svc-asddsa3-sites-0.nic.fd9399b3-ef29-40ee-8051-b7ace0515307"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-stg-zzz-count-onme-33-asddsa3-sites-0.nic.d870c819-0817-4855-9cae-e80e51b93240"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-imthe-one-web-asddsa3-sites-0.nic.e2f13f17-8251-4db9-970a-89d0bac8ae48"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-iknowitall-svc-asddsa3-sites-.nic.30386bf4-3206-4ed9-bf18-f1566a3e18dd"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-dataretention-svc-asddsa3-sites-.nic.d4800994-9837-4301-8a82-eadee0353ed0"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-super-star-asddsa3-sites-0.nic.0fb5378c-aebc-4b12-bae2-6b1a024b2229"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/frontend-hoho-subnet",
+    "source": "pe-stg-zzz-toofast-asddsa3-sites-0.nic.1f88bcd0-50b4-41e2-aa0d-041fc4153c53"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-ohmy-document-svc-asddsa3-sites-0.nic.0eee1764-ba0b-402d-9dd0-3d0889e7cacc"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-nice-pics-asddsa3-sites-0.nic.f3be0f48-33b8-4132-9592-526a79f52982"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-perf-aggregation-worker-asddsa3-.nic.d935b6f8-0671-4704-a9c9-205556e7be20"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-findme-ifu-can-asddsa3-sit.nic.febf0561-b0d5-4523-829b-973e59b107c6"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-policy-svc-asddsa3-sites-0.nic.3274774a-ac85-4da5-ba4b-b96a28727a8d"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-populate-svc-asddsa3-sites-0.nic.b93126ee-daa4-4746-867e-407ebd925b15"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-pingpong-svc-asddsa3-sites-0.nic.d9d823b1-a14c-42ea-bdf6-1eeb220bcec3"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-lawns-svc-asddsa3-sites-0.nic.7bfc878d-fa3c-43ea-b875-a300f59cd2c9"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-scheduler-asddsa3-sites-0.nic.135feff6-9dd2-4b7f-99de-ea9e117fadd7"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-atlast-srv-asddsa3-sites-0.nic.d78c954b-c52e-4408-bfab-fdd2a67ea1f2"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
+    "source": "pe-stg-zzz-another-one-asddsa3-sites-0.nic.d9ecde67-6ec3-4c46-9a34-03369c73ffd8"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-sazzzstggjcgzrygngmsg-file-0.nic.4c1c6a22-1f95-437e-b5a5-ddd55ae8e747"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-djghbfjhbhfbhfbvis-blob.nic.9bca935e-6cc3-4b49-b725-8b00b203b294"
+  },
+  {
+    "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/data-hoho-subnet",
+    "source": "pe-djghbfjhbhfbhfbvis-web.nic.5faa2841-df59-4b42-b06d-b15d052e6550"
+  }
+]
