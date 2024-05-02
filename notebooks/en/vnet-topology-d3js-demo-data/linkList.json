@@ -1,7 +1,7 @@
 [
   {
-    "target": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
-    "source": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet"
+    "target": "resourceGroups/not-sure-what-this-is-either/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+    "source": "resourceGroups/not-sure-what-this-is-either/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet"
   },
   {
     "target": "resourceGroups/rg-cccl-data-vnet-asddsa3/providers/Microsoft.Network/virtualNetworks/cccl-data-vnet-asddsa3/subnets/somestuff01-subnet",
@@ -208,11 +208,11 @@
     "source": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3"
   },
   {
-    "target": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+    "target": "resourceGroups/not-sure-what-this-is-either/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
     "source": "lnx-vm-for-img608"
   },
   {
-    "target": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+    "target": "resourceGroups/not-sure-what-this-is-either/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
     "source": "win-vm-for-img766"
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-dev-zzz-dataretention-svc-asddsa3-sites-.nic.7ebd36fc-4932-4da5-bbef-f5b87ffd07cd"
+    "source": "pe-dev-zzz-istoreallforever-svc-asddsa3-sites-.nic.7ebd36fc-4932-4da5-bbef-f5b87ffd07cd"
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -317,7 +317,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-dev-zzz-intl-utils-svc-asddsa3-sites-0.nic.46bff85d-e192-4543-ae80-a520e5d91363"
+    "source": "pe-dev-zzz-dig-potato-svc-asddsa3-sites-0.nic.46bff85d-e192-4543-ae80-a520e5d91363"
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -325,7 +325,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-dev-zzz-perf-aggregation-worker-asddsa3-.nic.ff1dc089-9907-415b-9899-8ee11566224d"
+    "source": "pe-dev-zzz-whois-this-worker-asddsa3-.nic.ff1dc089-9907-415b-9899-8ee11566224d"
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -333,7 +333,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-dev-zzz-policy-svc-asddsa3-sites-0.nic.0912abbd-710f-4afe-9975-b6ecbaad2a26"
+    "source": "pe-dev-zzz-lawenf-svc-asddsa3-sites-0.nic.0912abbd-710f-4afe-9975-b6ecbaad2a26"
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -357,7 +357,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-dev-zzz-scheduler-asddsa3-sites-0.nic.6b5aa20c-98cc-4041-ad35-129535427ef8"
+    "source": "pe-dev-zzz-planner-asddsa3-sites-0.nic.6b5aa20c-98cc-4041-ad35-129535427ef8"
   },
   {
     "target": "resourceGroups/rg-zzz-dev-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-dev-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -413,7 +413,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-int-zzz-dataretention-svc-asddsa3-sites-.nic.ebb14655-d840-4478-81df-0d7ecebbe51e"
+    "source": "pe-int-zzz-istoreallforever-svc-asddsa3-sites-.nic.ebb14655-d840-4478-81df-0d7ecebbe51e"
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -429,7 +429,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-int-zzz-intl-utils-svc-asddsa3-sites-0.nic.f6a4e657-399a-40ce-b077-f1d5fa0fdbec"
+    "source": "pe-int-zzz-dig-potato-svc-asddsa3-sites-0.nic.f6a4e657-399a-40ce-b077-f1d5fa0fdbec"
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -437,7 +437,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-int-zzz-perf-aggregation-worker-asddsa3-.nic.79b62b87-a75d-4505-b8a2-c957cfcf9e24"
+    "source": "pe-int-zzz-whois-this-worker-asddsa3-.nic.79b62b87-a75d-4505-b8a2-c957cfcf9e24"
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -445,7 +445,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-int-zzz-policy-svc-asddsa3-sites-0.nic.1f76f62a-bf66-4f28-80d0-3fbd9be3c391"
+    "source": "pe-int-zzz-lawenf-svc-asddsa3-sites-0.nic.1f76f62a-bf66-4f28-80d0-3fbd9be3c391"
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -465,7 +465,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-int-zzz-scheduler-asddsa3-sites-0.nic.8d308136-1556-44d4-8bfd-ee3712c3f949"
+    "source": "pe-int-zzz-planner-asddsa3-sites-0.nic.8d308136-1556-44d4-8bfd-ee3712c3f949"
   },
   {
     "target": "resourceGroups/rg-zzz-int-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-int-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -517,7 +517,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-perf-zzz-dataretention-svc-asddsa3-sites.nic.b6e78bdf-273f-4633-a41b-f006a8e333d9"
+    "source": "pe-perf-zzz-istoreallforever-svc-asddsa3-sites.nic.b6e78bdf-273f-4633-a41b-f006a8e333d9"
   },
   {
     "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -541,7 +541,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-perf-zzz-policy-svc-asddsa3-sites-0.nic.58d76dc1-e0a7-4bde-a80a-c89734cb863f"
+    "source": "pe-perf-zzz-lawenf-svc-asddsa3-sites-0.nic.58d76dc1-e0a7-4bde-a80a-c89734cb863f"
   },
   {
     "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -557,7 +557,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-perf-zzz-scheduler-asddsa3-sites-0.nic.2bb6c963-e9b7-4121-afc0-ad033d788dfd"
+    "source": "pe-perf-zzz-planner-asddsa3-sites-0.nic.2bb6c963-e9b7-4121-afc0-ad033d788dfd"
   },
   {
     "target": "resourceGroups/rg-zzz-perf-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-perf-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -609,7 +609,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-stg-zzz-dataretention-svc-asddsa3-sites-.nic.d4800994-9837-4301-8a82-eadee0353ed0"
+    "source": "pe-stg-zzz-istoreallforever-svc-asddsa3-sites-.nic.d4800994-9837-4301-8a82-eadee0353ed0"
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -629,7 +629,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-stg-zzz-perf-aggregation-worker-asddsa3-.nic.d935b6f8-0671-4704-a9c9-205556e7be20"
+    "source": "pe-stg-zzz-whois-this-worker-asddsa3-.nic.d935b6f8-0671-4704-a9c9-205556e7be20"
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -637,7 +637,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-stg-zzz-policy-svc-asddsa3-sites-0.nic.3274774a-ac85-4da5-ba4b-b96a28727a8d"
+    "source": "pe-stg-zzz-lawenf-svc-asddsa3-sites-0.nic.3274774a-ac85-4da5-ba4b-b96a28727a8d"
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
@@ -653,7 +653,7 @@
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",
-    "source": "pe-stg-zzz-scheduler-asddsa3-sites-0.nic.135feff6-9dd2-4b7f-99de-ea9e117fadd7"
+    "source": "pe-stg-zzz-planner-asddsa3-sites-0.nic.135feff6-9dd2-4b7f-99de-ea9e117fadd7"
   },
   {
     "target": "resourceGroups/rg-zzz-stg-network-asddsa3/providers/Microsoft.Network/virtualNetworks/zzz-stg-vnet-asddsa3/subnets/backend-hoho-subnet",

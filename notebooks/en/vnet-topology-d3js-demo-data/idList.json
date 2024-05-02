@@ -1,6 +1,6 @@
 [
     {
-        "id": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet",
+        "id": "resourceGroups/not-sure-what-this-is-either/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet",
         "color": "#ff6942",
         "displayName": "win-vm-for-img-vnet:10.aa.bb.yo/16",
         "outDegree": 1,
@@ -8,7 +8,7 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "resourceGroups/pki-vm-images-rg-for-vm/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
+        "id": "resourceGroups/not-sure-what-this-is-either/providers/Microsoft.Network/virtualNetworks/win-vm-for-img-vnet/subnets/default",
         "color": "#ffc500",
         "displayName": "default:10.aa.bb.yo/24",
         "outDegree": 0,
@@ -560,9 +560,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-dev-zzz-dataretention-svc-asddsa3-sites-.nic.7ebd36fc-4932-4da5-bbef-f5b87ffd07cd",
+        "id": "pe-dev-zzz-istoreallforever-svc-asddsa3-sites-.nic.7ebd36fc-4932-4da5-bbef-f5b87ffd07cd",
         "color": "#ba150d",
-        "displayName": "pe-dev-zzz-dataretention-svc-asddsa3-sites-",
+        "displayName": "pe-dev-zzz-istoreallforever-svc-asddsa3-sites-",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -592,9 +592,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-dev-zzz-intl-utils-svc-asddsa3-sites-0.nic.46bff85d-e192-4543-ae80-a520e5d91363",
+        "id": "pe-dev-zzz-dig-potato-svc-asddsa3-sites-0.nic.46bff85d-e192-4543-ae80-a520e5d91363",
         "color": "#ba150d",
-        "displayName": "pe-dev-zzz-intl-utils-svc-asddsa3-sites-0",
+        "displayName": "pe-dev-zzz-dig-potato-svc-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -608,9 +608,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-dev-zzz-perf-aggregation-worker-asddsa3-.nic.ff1dc089-9907-415b-9899-8ee11566224d",
+        "id": "pe-dev-zzz-whois-this-worker-asddsa3-.nic.ff1dc089-9907-415b-9899-8ee11566224d",
         "color": "#ba150d",
-        "displayName": "pe-dev-zzz-perf-aggregation-worker-asddsa3-",
+        "displayName": "pe-dev-zzz-whois-this-worker-asddsa3-",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -624,9 +624,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-dev-zzz-policy-svc-asddsa3-sites-0.nic.0912abbd-710f-4afe-9975-b6ecbaad2a26",
+        "id": "pe-dev-zzz-lawenf-svc-asddsa3-sites-0.nic.0912abbd-710f-4afe-9975-b6ecbaad2a26",
         "color": "#ba150d",
-        "displayName": "pe-dev-zzz-policy-svc-asddsa3-sites-0",
+        "displayName": "pe-dev-zzz-lawenf-svc-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -672,9 +672,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-dev-zzz-scheduler-asddsa3-sites-0.nic.6b5aa20c-98cc-4041-ad35-129535427ef8",
+        "id": "pe-dev-zzz-planner-asddsa3-sites-0.nic.6b5aa20c-98cc-4041-ad35-129535427ef8",
         "color": "#ba150d",
-        "displayName": "pe-dev-zzz-scheduler-asddsa3-sites-0",
+        "displayName": "pe-dev-zzz-planner-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -784,9 +784,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-int-zzz-dataretention-svc-asddsa3-sites-.nic.ebb14655-d840-4478-81df-0d7ecebbe51e",
+        "id": "pe-int-zzz-istoreallforever-svc-asddsa3-sites-.nic.ebb14655-d840-4478-81df-0d7ecebbe51e",
         "color": "#ba150d",
-        "displayName": "pe-int-zzz-dataretention-svc-asddsa3-sites-",
+        "displayName": "pe-int-zzz-istoreallforever-svc-asddsa3-sites-",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -816,9 +816,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-int-zzz-intl-utils-svc-asddsa3-sites-0.nic.f6a4e657-399a-40ce-b077-f1d5fa0fdbec",
+        "id": "pe-int-zzz-dig-potato-svc-asddsa3-sites-0.nic.f6a4e657-399a-40ce-b077-f1d5fa0fdbec",
         "color": "#ba150d",
-        "displayName": "pe-int-zzz-intl-utils-svc-asddsa3-sites-0",
+        "displayName": "pe-int-zzz-dig-potato-svc-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -832,9 +832,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-int-zzz-perf-aggregation-worker-asddsa3-.nic.79b62b87-a75d-4505-b8a2-c957cfcf9e24",
+        "id": "pe-int-zzz-whois-this-worker-asddsa3-.nic.79b62b87-a75d-4505-b8a2-c957cfcf9e24",
         "color": "#ba150d",
-        "displayName": "pe-int-zzz-perf-aggregation-worker-asddsa3-",
+        "displayName": "pe-int-zzz-whois-this-worker-asddsa3-",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -848,9 +848,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-int-zzz-policy-svc-asddsa3-sites-0.nic.1f76f62a-bf66-4f28-80d0-3fbd9be3c391",
+        "id": "pe-int-zzz-lawenf-svc-asddsa3-sites-0.nic.1f76f62a-bf66-4f28-80d0-3fbd9be3c391",
         "color": "#ba150d",
-        "displayName": "pe-int-zzz-policy-svc-asddsa3-sites-0",
+        "displayName": "pe-int-zzz-lawenf-svc-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -888,9 +888,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-int-zzz-scheduler-asddsa3-sites-0.nic.8d308136-1556-44d4-8bfd-ee3712c3f949",
+        "id": "pe-int-zzz-planner-asddsa3-sites-0.nic.8d308136-1556-44d4-8bfd-ee3712c3f949",
         "color": "#ba150d",
-        "displayName": "pe-int-zzz-scheduler-asddsa3-sites-0",
+        "displayName": "pe-int-zzz-planner-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -992,9 +992,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-perf-zzz-dataretention-svc-asddsa3-sites.nic.b6e78bdf-273f-4633-a41b-f006a8e333d9",
+        "id": "pe-perf-zzz-istoreallforever-svc-asddsa3-sites.nic.b6e78bdf-273f-4633-a41b-f006a8e333d9",
         "color": "#ba150d",
-        "displayName": "pe-perf-zzz-dataretention-svc-asddsa3-sites",
+        "displayName": "pe-perf-zzz-istoreallforever-svc-asddsa3-sites",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -1040,9 +1040,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-perf-zzz-policy-svc-asddsa3-sites-0.nic.58d76dc1-e0a7-4bde-a80a-c89734cb863f",
+        "id": "pe-perf-zzz-lawenf-svc-asddsa3-sites-0.nic.58d76dc1-e0a7-4bde-a80a-c89734cb863f",
         "color": "#ba150d",
-        "displayName": "pe-perf-zzz-policy-svc-asddsa3-sites-0",
+        "displayName": "pe-perf-zzz-lawenf-svc-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -1072,9 +1072,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-perf-zzz-scheduler-asddsa3-sites-0.nic.2bb6c963-e9b7-4121-afc0-ad033d788dfd",
+        "id": "pe-perf-zzz-planner-asddsa3-sites-0.nic.2bb6c963-e9b7-4121-afc0-ad033d788dfd",
         "color": "#ba150d",
-        "displayName": "pe-perf-zzz-scheduler-asddsa3-sites-0",
+        "displayName": "pe-perf-zzz-planner-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -1176,9 +1176,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-stg-zzz-dataretention-svc-asddsa3-sites-.nic.d4800994-9837-4301-8a82-eadee0353ed0",
+        "id": "pe-stg-zzz-istoreallforever-svc-asddsa3-sites-.nic.d4800994-9837-4301-8a82-eadee0353ed0",
         "color": "#ba150d",
-        "displayName": "pe-stg-zzz-dataretention-svc-asddsa3-sites-",
+        "displayName": "pe-stg-zzz-istoreallforever-svc-asddsa3-sites-",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -1216,9 +1216,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-stg-zzz-perf-aggregation-worker-asddsa3-.nic.d935b6f8-0671-4704-a9c9-205556e7be20",
+        "id": "pe-stg-zzz-whois-this-worker-asddsa3-.nic.d935b6f8-0671-4704-a9c9-205556e7be20",
         "color": "#ba150d",
-        "displayName": "pe-stg-zzz-perf-aggregation-worker-asddsa3-",
+        "displayName": "pe-stg-zzz-whois-this-worker-asddsa3-",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -1232,9 +1232,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-stg-zzz-policy-svc-asddsa3-sites-0.nic.3274774a-ac85-4da5-ba4b-b96a28727a8d",
+        "id": "pe-stg-zzz-lawenf-svc-asddsa3-sites-0.nic.3274774a-ac85-4da5-ba4b-b96a28727a8d",
         "color": "#ba150d",
-        "displayName": "pe-stg-zzz-policy-svc-asddsa3-sites-0",
+        "displayName": "pe-stg-zzz-lawenf-svc-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
@@ -1264,9 +1264,9 @@
         "radius": 5.6268656716417915
     },
     {
-        "id": "pe-stg-zzz-scheduler-asddsa3-sites-0.nic.135feff6-9dd2-4b7f-99de-ea9e117fadd7",
+        "id": "pe-stg-zzz-planner-asddsa3-sites-0.nic.135feff6-9dd2-4b7f-99de-ea9e117fadd7",
         "color": "#ba150d",
-        "displayName": "pe-stg-zzz-scheduler-asddsa3-sites-0",
+        "displayName": "pe-stg-zzz-planner-asddsa3-sites-0",
         "outDegree": 1,
         "inDegree": 0,
         "radius": 5.6268656716417915
