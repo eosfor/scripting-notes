@@ -15,8 +15,8 @@ RUN apt-get update
 RUN mkdir /extra \
     && cd /extra \
     && wget https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.4/MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz \
-    && tar -xvzf MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz \
-    && export PATH=$PATH:/extra/MiniZincIDE-2.8.4-bundle-linux-x86_64/bin
+    && tar -xvzf MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz
+ENV PATH $PATH:/extra/MiniZincIDE-2.8.4-bundle-linux-x86_64/bin
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
