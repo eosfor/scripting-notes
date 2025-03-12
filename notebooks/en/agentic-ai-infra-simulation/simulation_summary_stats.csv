@@ -1,0 +1,15 @@
+,mean,std,min,max
+direct_requests,6479,74,6332,6656
+split_requests,25921,174,25481,26307
+dropped_requests,595,40,498,710
+total_requests,32400,188,32010,32794
+percent_split,80,0,79,80
+user_query_tokens,3563557,47046,3464816,3683875
+system_query_tokens,95052192,579792,93631816,96394838
+llm_response_tokens,42768946,262227,42142061,43473226
+total_llm_tokens,141384694,838885,139355251,143270004
+llm_cost,424,3,418,430
+aks_cost,2290,6,2272,2307
+total_cost,2714,9,2690,2737
+max_nodes,11,0,11,11
+avg_nodes,8,0,8,8
