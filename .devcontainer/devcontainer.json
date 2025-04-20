@@ -10,19 +10,6 @@
                         "path": "/usr/bin/pwsh"
                     }
                 },
-                "dotnet-interactive.kernelTransportArgs": [
-                    "{dotnet_path}",
-                    "/home/vscode/.nuget/packages/microsoft.dotnet-interactive/1.0.616001/tools/net9.0/any/Microsoft.DotNet.Interactive.App.dll",
-                    "[vscode]",
-                    "stdio",
-                    "--working-dir",
-                    "{working_dir}"
-                ],
-                "dotnet-interactive.notebookParserArgs": [
-                    "{dotnet_path}",
-                    "/home/vscode/.nuget/packages/microsoft.dotnet-interactive/1.0.616001/tools/net9.0/any/Microsoft.DotNet.Interactive.App.dll",
-                    "notebook-parser"
-                ],
                 "editor.formatOnSave": false,
                 "files.trimTrailingWhitespace": true
             },
