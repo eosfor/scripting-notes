@@ -5,7 +5,7 @@ You can just read through on GitHub, it can display them
 If you want to try them locally you need
 
 - Windows box
-- [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [.NET Interactive Notebooks for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 
