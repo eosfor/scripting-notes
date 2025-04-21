@@ -10,6 +10,7 @@ You can directly open this repo in [github codespaces](https://github.com/featur
 
 ## Notebooks
 
+- [💰 Counting Other People`s Money with PowerShell](./notebooks/en/basics.ipynb)
 - [Do we always need to follow CAF recommendations?](./notebooks/en/infrastructureCreation.ipynb)
 - [How to optimize target VM costs when moving them to Azure](./notebooks/en/vmOptimization-basics.ipynb)
 - [How to optimize target VM costs when moving them to Azure using an SMT solver](./notebooks/en/vmOptimization-or-tools.ipynb)
