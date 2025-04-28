@@ -1,0 +1,692 @@
+[
+    {
+      "id": 1,
+      "name": "accessRoot",
+      "parent": null
+    },
+    {
+      "id": 2,
+      "name": "user:sheridan@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 3,
+      "name": "scope:station-b5-prime",
+      "parent": 2
+    },
+    {
+      "id": 4,
+      "name": "Contributor",
+      "parent": 3
+    },
+    {
+      "id": 5,
+      "name": "user:na-toth@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 6,
+      "name": "scope:ops-relaya-prime",
+      "parent": 5
+    },
+    {
+      "id": 7,
+      "name": "Owner",
+      "parent": 6
+    },
+    {
+      "id": 8,
+      "name": "Contributor",
+      "parent": 6
+    },
+    {
+      "id": 9,
+      "name": "user:ta-lon@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 10,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 9
+    },
+    {
+      "id": 11,
+      "name": "Contributor",
+      "parent": 10
+    },
+    {
+      "id": 12,
+      "name": "user:vorlon@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 13,
+      "name": "scope:station-b5-prime",
+      "parent": 12
+    },
+    {
+      "id": 14,
+      "name": "Owner",
+      "parent": 13
+    },
+    {
+      "id": 15,
+      "name": "user:zack@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 16,
+      "name": "scope:station-b5-prime",
+      "parent": 15
+    },
+    {
+      "id": 17,
+      "name": "Contributor",
+      "parent": 16
+    },
+    {
+      "id": 18,
+      "name": "user:kosh@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 19,
+      "name": "scope:psteam-relaya",
+      "parent": 18
+    },
+    {
+      "id": 20,
+      "name": "Storage Blob Data Contributor",
+      "parent": 19
+    },
+    {
+      "id": 21,
+      "name": "user:lyta@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 22,
+      "name": "scope:relaya-b401-...",
+      "parent": 21
+    },
+    {
+      "id": 23,
+      "name": "User Access Administrator",
+      "parent": 22
+    },
+    {
+      "id": 24,
+      "name": "scope:station-b5-prime",
+      "parent": 21
+    },
+    {
+      "id": 25,
+      "name": "Owner",
+      "parent": 24
+    },
+    {
+      "id": 26,
+      "name": "scope:babcom-kv",
+      "parent": 21
+    },
+    {
+      "id": 27,
+      "name": "Key Vault Secrets Officer",
+      "parent": 26
+    },
+    {
+      "id": 28,
+      "name": "user:franklin@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 29,
+      "name": "scope:station-b5-prime",
+      "parent": 28
+    },
+    {
+      "id": 30,
+      "name": "Contributor",
+      "parent": 29
+    },
+    {
+      "id": 31,
+      "name": "user:keer@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 32,
+      "name": "scope:ops-relaya-prime",
+      "parent": 31
+    },
+    {
+      "id": 33,
+      "name": "Reader",
+      "parent": 32
+    },
+    {
+      "id": 34,
+      "name": "user:lochley@station-b5.space",
+      "parent": 1
+    },
+    {
+      "id": 35,
+      "name": "scope:relaya-ops-tmp",
+      "parent": 34
+    },
+    {
+      "id": 36,
+      "name": "Contributor",
+      "parent": 35
+    },
+    {
+      "id": 37,
+      "name": "scope:relaya-ops-vmimg",
+      "parent": 34
+    },
+    {
+      "id": 38,
+      "name": "Contributor",
+      "parent": 37
+    },
+    {
+      "id": 39,
+      "name": "scope:clgx_prd_rct",
+      "parent": 34
+    },
+    {
+      "id": 40,
+      "name": "Contributor",
+      "parent": 39
+    },
+    {
+      "id": 41,
+      "name": "Vorlon Observers",
+      "parent": 1
+    },
+    {
+      "id": 42,
+      "name": "scope:relaya-data-01",
+      "parent": 41
+    },
+    {
+      "id": 43,
+      "name": "SQL Managed Instance Contributor",
+      "parent": 42
+    },
+    {
+      "id": 44,
+      "name": "SQL Security Manager",
+      "parent": 42
+    },
+    {
+      "id": 45,
+      "name": "scope:relaya-data-02",
+      "parent": 41
+    },
+    {
+      "id": 46,
+      "name": "SQL Managed Instance Contributor",
+      "parent": 45
+    },
+    {
+      "id": 47,
+      "name": "SQL Security Manager",
+      "parent": 45
+    },
+    {
+      "id": 48,
+      "name": "scope:relaya-sec-02",
+      "parent": 41
+    },
+    {
+      "id": 49,
+      "name": "SQL Managed Instance Contributor",
+      "parent": 48
+    },
+    {
+      "id": 50,
+      "name": "SQL Security Manager",
+      "parent": 48
+    },
+    {
+      "id": 51,
+      "name": "scope:relaya-sec-03",
+      "parent": 41
+    },
+    {
+      "id": 52,
+      "name": "SQL Managed Instance Contributor",
+      "parent": 51
+    },
+    {
+      "id": 53,
+      "name": "SQL Security Manager",
+      "parent": 51
+    },
+    {
+      "id": 54,
+      "name": "scope:ops-vm-relaya",
+      "parent": 41
+    },
+    {
+      "id": 55,
+      "name": "Virtual Machine Contributor",
+      "parent": 54
+    },
+    {
+      "id": 56,
+      "name": "White Star DevOps Squadron",
+      "parent": 1
+    },
+    {
+      "id": 57,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 56
+    },
+    {
+      "id": 58,
+      "name": "Workbook Contributor",
+      "parent": 57
+    },
+    {
+      "id": 59,
+      "name": "Reader",
+      "parent": 57
+    },
+    {
+      "id": 60,
+      "name": "Website Contributor",
+      "parent": 57
+    },
+    {
+      "id": 61,
+      "name": "scope:babcom-appconfig",
+      "parent": 56
+    },
+    {
+      "id": 62,
+      "name": "App Configuration Data Reader",
+      "parent": 61
+    },
+    {
+      "id": 63,
+      "name": "scope:babcom-kv",
+      "parent": 56
+    },
+    {
+      "id": 64,
+      "name": "Key Vault Secrets Officer",
+      "parent": 63
+    },
+    {
+      "id": 65,
+      "name": "Anla'Shok QA Unit",
+      "parent": 1
+    },
+    {
+      "id": 66,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 65
+    },
+    {
+      "id": 67,
+      "name": "Reader",
+      "parent": 66
+    },
+    {
+      "id": 68,
+      "name": "Babcom Data Division",
+      "parent": 1
+    },
+    {
+      "id": 69,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 68
+    },
+    {
+      "id": 70,
+      "name": "Storage Account Contributor",
+      "parent": 69
+    },
+    {
+      "id": 71,
+      "name": "SQL Managed Instance Contributor",
+      "parent": 69
+    },
+    {
+      "id": 72,
+      "name": "Virtual Machine User Login",
+      "parent": 69
+    },
+    {
+      "id": 73,
+      "name": "scope:relaya-storage",
+      "parent": 68
+    },
+    {
+      "id": 74,
+      "name": "Contributor",
+      "parent": 73
+    },
+    {
+      "id": 75,
+      "name": "scope:relaya-pg-prim",
+      "parent": 68
+    },
+    {
+      "id": 76,
+      "name": "Reader",
+      "parent": 75
+    },
+    {
+      "id": 77,
+      "name": "Contributor",
+      "parent": 75
+    },
+    {
+      "id": 78,
+      "name": "scope:relaya-pg-sec",
+      "parent": 68
+    },
+    {
+      "id": 79,
+      "name": "Reader",
+      "parent": 78
+    },
+    {
+      "id": 80,
+      "name": "scope:white-star-hub",
+      "parent": 68
+    },
+    {
+      "id": 81,
+      "name": "Reader",
+      "parent": 80
+    },
+    {
+      "id": 82,
+      "name": "scope:babcom-kv",
+      "parent": 68
+    },
+    {
+      "id": 83,
+      "name": "Key Vault Secrets Officer",
+      "parent": 82
+    },
+    {
+      "id": 84,
+      "name": "Station Systems Command",
+      "parent": 1
+    },
+    {
+      "id": 85,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 84
+    },
+    {
+      "id": 86,
+      "name": "Web Plan Contributor",
+      "parent": 85
+    },
+    {
+      "id": 87,
+      "name": "App Compliance Automation Administrator",
+      "parent": 85
+    },
+    {
+      "id": 88,
+      "name": "Reader",
+      "parent": 85
+    },
+    {
+      "id": 89,
+      "name": "Virtual Machine Contributor",
+      "parent": 85
+    },
+    {
+      "id": 90,
+      "name": "Website Contributor",
+      "parent": 85
+    },
+    {
+      "id": 91,
+      "name": "Application Insights Component Contributor",
+      "parent": 85
+    },
+    {
+      "id": 92,
+      "name": "scope:white-star-dashboards",
+      "parent": 84
+    },
+    {
+      "id": 93,
+      "name": "Contributor",
+      "parent": 92
+    },
+    {
+      "id": 94,
+      "name": "scope:babcom-appconfig",
+      "parent": 84
+    },
+    {
+      "id": 95,
+      "name": "App Configuration Data Reader",
+      "parent": 94
+    },
+    {
+      "id": 96,
+      "name": "scope:babcom-kv",
+      "parent": 84
+    },
+    {
+      "id": 97,
+      "name": "Key Vault Secrets Officer",
+      "parent": 96
+    },
+    {
+      "id": 98,
+      "name": "Babylon 5 Operations Support",
+      "parent": 1
+    },
+    {
+      "id": 99,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 98
+    },
+    {
+      "id": 100,
+      "name": "Log Analytics Contributor",
+      "parent": 99
+    },
+    {
+      "id": 101,
+      "name": "Monitoring Contributor",
+      "parent": 99
+    },
+    {
+      "id": 102,
+      "name": "App Configuration Data Reader",
+      "parent": 99
+    },
+    {
+      "id": 103,
+      "name": "Key Vault Secrets User",
+      "parent": 99
+    },
+    {
+      "id": 104,
+      "name": "Website Administrator",
+      "parent": 99
+    },
+    {
+      "id": 105,
+      "name": "Reader",
+      "parent": 99
+    },
+    {
+      "id": 106,
+      "name": "Reader and Data Access",
+      "parent": 99
+    },
+    {
+      "id": 107,
+      "name": "scope:white-star-dashboards",
+      "parent": 98
+    },
+    {
+      "id": 108,
+      "name": "Contributor",
+      "parent": 107
+    },
+    {
+      "id": 109,
+      "name": "scope:psteam-relaya",
+      "parent": 98
+    },
+    {
+      "id": 110,
+      "name": "Storage Blob Data Contributor",
+      "parent": 109
+    },
+    {
+      "id": 111,
+      "name": "scope:babcom-kv",
+      "parent": 98
+    },
+    {
+      "id": 112,
+      "name": "Key Vault Secrets User",
+      "parent": 111
+    },
+    {
+      "id": 113,
+      "name": "Babcom Client Interface",
+      "parent": 1
+    },
+    {
+      "id": 114,
+      "name": "scope:babcom-app-prim",
+      "parent": 113
+    },
+    {
+      "id": 115,
+      "name": "Application Insights Component Reader",
+      "parent": 114
+    },
+    {
+      "id": 116,
+      "name": "Log Analytics Reader",
+      "parent": 114
+    },
+    {
+      "id": 117,
+      "name": "scope:42d1a7f2-b5a4-...",
+      "parent": 113
+    },
+    {
+      "id": 118,
+      "name": "Workbook Reader",
+      "parent": 117
+    },
+    {
+      "id": 119,
+      "name": "srvPrincipal:relaya-scripts",
+      "parent": 1
+    },
+    {
+      "id": 120,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 119
+    },
+    {
+      "id": 121,
+      "name": "Storage Account Contributor",
+      "parent": 120
+    },
+    {
+      "id": 122,
+      "name": "scope:white-star-hub",
+      "parent": 119
+    },
+    {
+      "id": 123,
+      "name": "Storage Account Contributor",
+      "parent": 122
+    },
+    {
+      "id": 124,
+      "name": "scope:white-star-prim",
+      "parent": 119
+    },
+    {
+      "id": 125,
+      "name": "Contributor",
+      "parent": 124
+    },
+    {
+      "id": 126,
+      "name": "scope:white-star-sec",
+      "parent": 119
+    },
+    {
+      "id": 127,
+      "name": "Contributor",
+      "parent": 126
+    },
+    {
+      "id": 128,
+      "name": "srvPrincipal:relaya-webapp",
+      "parent": 1
+    },
+    {
+      "id": 129,
+      "name": "scope:babcom-appconfig",
+      "parent": 128
+    },
+    {
+      "id": 130,
+      "name": "App Configuration Data Reader",
+      "parent": 129
+    },
+    {
+      "id": 131,
+      "name": "scope:babcom-kv",
+      "parent": 128
+    },
+    {
+      "id": 132,
+      "name": "Key Vault Secrets User",
+      "parent": 131
+    },
+    {
+      "id": 133,
+      "name": "srvPrincipal:azdo-relaya-deployment",
+      "parent": 1
+    },
+    {
+      "id": 134,
+      "name": "relaya-b5fa-4d1c-...",
+      "parent": 133
+    },
+    {
+      "id": 135,
+      "name": "Resource Policy Contributor",
+      "parent": 134
+    },
+    {
+      "id": 136,
+      "name": "Contributor",
+      "parent": 134
+    },
+    {
+      "id": 137,
+      "name": "scope:babcom-appconfig",
+      "parent": 133
+    },
+    {
+      "id": 138,
+      "name": "App Configuration Data Owner",
+      "parent": 137
+    }
+  ]
