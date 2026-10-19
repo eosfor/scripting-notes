@@ -1,0 +1,4 @@
+simpy>=4.1,<5
+pandas>=2.2,<4
+matplotlib>=3.9,<4
+paretoset>=1.2,<2
